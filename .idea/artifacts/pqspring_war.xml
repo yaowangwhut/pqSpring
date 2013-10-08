@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="pqspring:war">
-    <output-path>$PROJECT_DIR$/target/artifacts/pqspring_war</output-path>
-    <root id="archive" name="pqspring_war.war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="pqspring-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="pqspring:war exploded" />
     </root>
   </artifact>
