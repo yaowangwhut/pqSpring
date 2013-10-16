@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 /**
- * Handles requests for the application home page.
+ * Handles requests for the application form demo page.
  */
 @Controller
 @SessionAttributes("guestForm")
 public class GuestController {
 
   /**
-   * Serve guestbook jpa.
+   * Serve form request
    */
   @RequestMapping(value = "/form", method = RequestMethod.GET)
   public String home(Model model) {
@@ -37,21 +37,21 @@ public class GuestController {
       BindingResult binding, 
       RedirectAttributes redirectAttributes) {
   
-    // Redirect back into jpa page if errors detected
+    // Redirect back into form page if errors detected
     if (binding.hasErrors()) {
       redirectAttributes.addFlashAttribute("org.springframework.validation.BindingResult.guestForm", binding);
       redirectAttributes.addFlashAttribute("guestForm", guestForm);
       return "redirect:/form";
     }
   
-    return "redirect:/success";
+    return "redirect:/form-success";
   }
 
   /**
    * Result page, simply displays 'message has ben sent'
    */
-  @RequestMapping(value = "/success", method = RequestMethod.GET)
-  public String result() {
+  @RequestMapping(value = "/form-success", method = RequestMethod.GET)
+  public String formResult() {
     return "/demo/form/success";
   }
 

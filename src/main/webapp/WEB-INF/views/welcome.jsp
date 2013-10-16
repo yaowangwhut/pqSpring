@@ -13,5 +13,6 @@
 <body>
 <h1>PQ Spring Tutorial</h1>
     <h3><a href="/form">Spring MVC Form Example</a></h3>
+    <h3><a href="/upload">Spring MVC File Upload Example</a></h3>
 </body>
 </html>
