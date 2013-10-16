@@ -26,4 +26,5 @@
 
 
     <import resource="spring-dao.xml" />
+    <!--<import resource="spring-security.xml"/>-->
 </beans>

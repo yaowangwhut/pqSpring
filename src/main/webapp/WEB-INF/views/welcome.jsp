@@ -12,6 +12,6 @@
 </head>
 <body>
 <h1>PQ Spring Tutorial</h1>
-    <div>"${message}"</div>
+    <h3><a href="/form">Spring MVC Form Example</a></h3>
 </body>
 </html>

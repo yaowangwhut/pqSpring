@@ -16,14 +16,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * To change this template use File | Settings | File Templates.
  */
 @Controller
-@RequestMapping("/*")
+@RequestMapping("xx")
 public class TestController {
-    private static Logger log= Logger.getLogger(TestController.class);
+
     private static Logger log2 = LogManager.getLogger(TestController.class.getName());
-    @RequestMapping(value="/", method= RequestMethod.GET)
+
+    @RequestMapping(value = "/xx", method = RequestMethod.GET)
     public String welcome(Model model) {
-        log.debug("=====================");
-        log2.error("--------------------");
+        log2.debug("--------------------");
         model.addAttribute("message", "Love Iris");
         return "welcome";
     }
